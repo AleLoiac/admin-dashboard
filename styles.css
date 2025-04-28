@@ -22,14 +22,49 @@ body {
 }
 
 .sidebar-header {
-    display: flex;
+    display: grid;
+    grid-template-rows: 70px;
+    grid-template-columns: 70px 1fr;
     align-items: center;
-    padding: 15px;
 }
 
 .dashboard-svg {
+    justify-self: center;
+    align-self: center;
+}
+
+.home-section {
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: repeat(6, 35px);
+    align-items: center;
+}
+
+.settings-section {
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: repeat(3, 35px);
+    align-items: center;
+}
+
+.home-section > div,
+.settings-section > div {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+}
+
+.home-section img,
+.settings-section img {
+    justify-self: center;
+    align-self: center;
+}
+
+.sidebar-header > .dashboard-svg {
     width: 40px;
-    margin-right: 10px;
+}
+
+.sidebar img {
+    width: 20px;
 }
 
 main {
