@@ -21,6 +21,17 @@ body {
     grid-column: 1 / 2;
 }
 
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.dashboard-svg {
+    width: 40px;
+    margin-right: 10px;
+}
+
 main {
     background-color: lightgrey;
 }
