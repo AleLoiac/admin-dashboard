@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-Regular.woff2') format('woff2'),
+        url('font/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -7,6 +16,7 @@
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     width: 100vw;
     height: 100vh;
@@ -29,8 +39,7 @@ body {
 }
 
 .dashboard-svg {
-    justify-self: center;
-    align-self: center;
+    place-self: center;
 }
 
 .home-section {
@@ -55,8 +64,7 @@ body {
 
 .home-section img,
 .settings-section img {
-    justify-self: center;
-    align-self: center;
+    place-self: center;
 }
 
 .sidebar-header > .dashboard-svg {
