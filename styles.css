@@ -83,6 +83,11 @@ body {
     width: 40px;
 }
 
+.header {
+    display:grid;
+    grid-template: 1fr 1fr / 5fr 3fr;
+}
+
 .profile-img-small {
     width: 40px;
     border-radius: 100%;
@@ -93,32 +98,17 @@ body {
     width: 20px;
 }
 
-.first-line {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 50px 10px 20px;
-}
-
-.search-bar {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.profile-access {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
 input[type="search"] {
     width: clamp(100px, 40vw, 500px);
     border-radius: 10px;
     border-style: none;
     background-color: rgb(204, 224, 224);
     padding: 3px 10px;
+}
+
+.profile-img-mid {
+    width: 60px;
+    border-radius: 100%;
 }
 
 main {
