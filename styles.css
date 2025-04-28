@@ -15,6 +15,10 @@
     margin: 0;
 }
 
+img {
+    display: block;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
@@ -79,7 +83,13 @@ body {
     width: 40px;
 }
 
-.sidebar img {
+.profile-img-small {
+    width: 40px;
+    border-radius: 100%;
+}
+
+.sidebar img,
+.icon {
     width: 20px;
 }
 
