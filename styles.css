@@ -93,6 +93,33 @@ body {
     width: 20px;
 }
 
+.first-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 50px 10px 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-access {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+input[type="search"] {
+    width: clamp(100px, 40vw, 500px);
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(204, 224, 224);
+    padding: 3px 10px;
+}
+
 main {
     background-color: lightgrey;
 }
