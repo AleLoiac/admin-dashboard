@@ -18,6 +18,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
+    font-size: 1rem;
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -26,9 +27,15 @@ body {
 }
 
 .sidebar {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
     background-color: green;
     grid-row: 1 / -1;
     grid-column: 1 / 2;
+}
+
+.sidebar img {
+    filter: invert();
 }
 
 .sidebar-header {
@@ -36,6 +43,7 @@ body {
     grid-template-rows: 70px;
     grid-template-columns: 70px 1fr;
     align-items: center;
+    font-size: 1.4rem;
 }
 
 .dashboard-svg {
