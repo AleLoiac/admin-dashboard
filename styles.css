@@ -95,6 +95,10 @@ h3 {
     font-size: 0.9rem;
 }
 
+h4 {
+    font-size: 0.7rem;
+}
+
 .header {
     display:grid;
     grid-template: 1fr 1fr / 5fr 3fr;
@@ -156,8 +160,8 @@ input[type="search"] {
 
 main {
     background-color: lightgrey;
-    padding: 20px 10px;
-    gap: 10px;
+    padding: 25px 20px;
+    gap: 20px;
     display: grid;
     grid-template: 1fr 1fr / 3fr 1fr;
 }
@@ -177,7 +181,8 @@ main {
     background-color: white;
     padding: 20px 15px;
     border-radius: 4px;
-    box-shadow: inset 5px 0px #334c8a;
+    box-shadow: inset 5px 0px #334c8a,
+                2px 2px 3px rgb(168, 168, 168);
 }
 
 .project-actions img {
@@ -200,6 +205,53 @@ main {
     grid-row: 1 / 2;
 }
 
+.announcements-grid {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(20px, 1fr));
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px rgb(168, 168, 168);
+    padding: 15px;
+}
+
+.report {
+    padding: 10px;
+}
+
+.report:not(:last-child) {
+    border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+.report p {
+    text-overflow: ellipsis;
+    font-size: 0.65rem;
+    color: rgb(54, 54, 54);
+}
+
 .trending {
     grid-row: 2 / -1;
+}
+
+.trending-grid {
+    display: grid;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px rgb(168, 168, 168);
+    padding: 15px;
+    font-size: 0.8rem;
+    gap: 20px;
+}
+
+.trending-profile {
+    display: flex;
+}
+
+.profile-text {
+    margin-left: 10px;
+    line-height: 1rem;
+    align-self: center;
+}
+
+.profile-text > p:nth-child(2) {
+    color: grey;
 }
