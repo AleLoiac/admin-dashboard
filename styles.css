@@ -27,7 +27,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: auto 4fr;
 }
 
 .sidebar {
@@ -136,6 +136,7 @@ button {
 
 .profile-img-small {
     width: 40px;
+    height: 40px;
     border-radius: 100%;
 }
 
@@ -163,18 +164,21 @@ main {
     padding: 25px 20px;
     gap: 20px;
     display: grid;
-    grid-template: 1fr 1fr / 3fr 1fr;
+    grid-template: auto 1fr / 3fr 1fr;
 }
 
 .projects {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects-grid {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    flex:1;
 }
 
 .card {
@@ -183,6 +187,8 @@ main {
     border-radius: 4px;
     box-shadow: inset 5px 0px #334c8a,
                 2px 2px 3px rgb(168, 168, 168);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 .project-actions img {
@@ -199,6 +205,7 @@ main {
     grid-auto-flow: column;
     justify-content: end;
     gap: 10px;
+    align-self: flex-end;
 }
 
 .announcements {
@@ -230,6 +237,8 @@ main {
 
 .trending {
     grid-row: 2 / -1;
+    display: flex;
+    flex-direction: column;
 }
 
 .trending-grid {
@@ -240,6 +249,11 @@ main {
     padding: 15px;
     font-size: 0.8rem;
     gap: 20px;
+    flex-grow: 1;
+}
+
+.trending-profile img {
+    align-self: center;
 }
 
 .trending-profile {
